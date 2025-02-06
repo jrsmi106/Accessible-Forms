@@ -33,15 +33,17 @@
 				<input type="email" id="email" name="email">
 				<label for="phone">Phone</label>
 				<input type="tel" id="phone" name="phone">
-			
-				<label for="prefer-contact">Prefered Contact</label>
-
-				<label for="phone">Phone</label>
-				<input type="radio" id="phone" name="prefer-contact" value="phone">
-				<label for="email">Email</label>
-				<input type="radio" id="email" name="prefer-contact" value="email">
 				
-				<label for="state">State</label>
+				<fieldset>
+					<legend>Prefered Contact</legend>
+
+					<label for="phonepref">Phone</label>
+					<input type="radio" id="phonepref" name="prefer-contact" value="phone">
+					<label for="emailpref">Email</label>
+					<input type="radio" id="emailpref" name="prefer-contact" value="email">
+				</fieldset>
+
+				<label>State</label>
 				<select id="State">
 					<option value="AL">AL</option>
 					<option value="AK">AK</option>
@@ -95,10 +97,11 @@
 					<option value="WY">WY</option>
 					<option value="DC">DC</option>
 				</select>
-
+				<Label>Comment</Label>
+				<textarea id="comments" name="comments"></textarea>
 				
 				
-
+			<input type="submit" value="submit">	
 			</form>
 <!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
 		</article>
